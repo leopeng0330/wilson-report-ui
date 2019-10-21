@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Report</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="/js/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="/js/bootstrap.min.js"></script>
+
+
+    <link href="/css/Chart.min.css" rel="stylesheet">
+    <script src="/js/Chart.min.js"></script>
+    <script src="/js/utils.js"></script>
+
+    <link href="/css/main.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <span class="navbar-brand">Report</span>
+    </nav>
+    <div class="col-md-1"></div>
+    <div class="col-md-10" style="margin-top: 30px">
+        <h1 class="page-header">Report</h1>
+        <div class="row placeholders">
+            <div class="col-sm-2 placeholder">
+                <canvas id="chart-area1" width="200" height="200"></canvas>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+            </div>
+
+            <div class="col-sm-10">
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </div><!-- /.col-sm-4 -->
+                <div class="col-sm-3">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </div><!-- /.col-sm-4 -->
+                <div class="col-sm-3">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </div><!-- /.col-sm-4 -->
+                <div class="col-sm-3">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </div><!-- /.col-sm-4 -->
+            </div>
+
+        </div>
+        <h2 class="sub-header">Section title</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Case ID</th>
+                    <th>Row No</th>
+                    <th>Policy No</th>
+                    <th>Header</th>
+                    <th>01D</th>
+                    <th>03D</th>
+                    <th>04D/05D&nbsp;<span class="badge">42</span></th>
+                    <th>06D</th>
+                    <th>Pip Job</th>
+                    <th>Cause By</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1,001</td>
+                    <td>Lorem</td>
+                    <td>ipsum</td>
+                    <td>dolor</td>
+                    <td>ipsum</td>
+                    <td>dolor</td>
+                    <td><span class="label label-primary">ipsum</span></td>
+                    <td>dolor</td>
+                    <td><span class="label label-default">sit</span></td>
+                    <td>This is some thingThis is some thingThis is some thingThis is some thingThis is some thingThis is some thing</td>
+                </tr>
+                <tr>
+                    <td>1,002</td>
+                    <td>amet</td>
+                    <td>consectetur</td>
+                    <td>adipiscing</td>
+                    <td>consectetur</td>
+                    <td><span class="label label-primary">adipiscing</span></td>
+                    <td>consectetur</td>
+                    <td><span class="label label-default">adipiscing</span></td>
+                    <td><span class="label label-primary">sit</span></td>
+                    <td>This is some thingThis is some thingThis is some thingThis is some thingThis is some thingThis is some thing</td>
+                </tr>
+                <tr>
+                    <td>1,003</td>
+                    <td>Integer</td>
+                    <td>nec</td>
+                    <td>odio</td>
+                    <td>nec</td>
+                    <td><span class="label label-default">odio</span></td>
+                    <td><span class="label label-primary">nec</span></td>
+                    <td>odio</td>
+                    <td><span class="label label-success">Passed</span></td>
+                    <td>This is some thingThis is some thingThis is some thingThis is some thingThis is some thingThis is some thing</td>
+                </tr>
+                <tr>
+                    <td>1,003</td>
+                    <td>libero</td>
+                    <td>Sed</td>
+                    <td>cursus</td>
+                    <td>Sed</td>
+                    <td><span class="label label-info">cursus</span></td>
+                    <td>Sed</td>
+                    <td><span class="label label-info">cursus</span></td>
+                    <td><span class="label label-info">sit</span></td>
+                    <td>This is some thingThis is some thingThis is some thingThis is some thingThis is some thingThis is some thing</td>
+                </tr>
+                <tr>
+                    <td>1,004</td>
+                    <td>dapibus</td>
+                    <td>diam</td>
+                    <td>Sed</td>
+                    <td>diam</td>
+                    <td><span class="label label-primary">Sed</span></td>
+                    <td><span class="label label-warning">diam</span></td>
+                    <td>Sed</td>
+                    <td><span class="label label-warning">sit</span></td>
+                    <td>This is some thingThis is some thingThis is some thingThis is some thingThis is some thingThis is some thing</td>
+                </tr>
+                <tr>
+                    <td>1,005</td>
+                    <td>Nulla</td>
+                    <td>quis</td>
+                    <td>sem</td>
+                    <td><span class="label label-danger">quis</span></td>
+                    <td>sem</td>
+                    <td><span class="label label-warning">quis</span></td>
+                    <td><span class="label label-danger">sem</span></td>
+                    <td><span class="label label-danger">Failed</span></td>
+                    <td>This is some thingThis is some thingThis is some thingThis is some thingThis is some thingThis is some thing</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    <script>
+
+        var randomScalingFactor = function() {
+            return Math.round(Math.random() * 100);
+        };
+
+        var config = {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [
+                        randomScalingFactor(),
+                        randomScalingFactor(),
+                        randomScalingFactor(),
+                        randomScalingFactor(),
+                        randomScalingFactor(),
+                    ],
+                    backgroundColor: [
+                        window.chartColors.red,
+                        window.chartColors.orange,
+                        window.chartColors.yellow,
+                        window.chartColors.green,
+                        window.chartColors.blue,
+                    ],
+                    label: 'Dataset 1'
+                }],
+                labels: [
+                    'Red',
+                    'Orange',
+                    'Yellow',
+                    'Green',
+                    'Blue'
+                ]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    position: 'left',
+                },
+                title: {
+                    display: false,
+                    text: 'Doughnut Chart'
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                }
+            }
+        };
+
+        window.onload = function() {
+            var ctx1 = document.getElementById('chart-area1').getContext('2d');
+            window.myDoughnut1 = new Chart(ctx1, config);
+        };
+    </script>
+</body>
+</html>
